@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>
+      Peter's Portfolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa48802236.js" crossorigin="anonymous"></script>
+  </head>
+ 
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Education</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Peter</span> Le <br>from Seattle</h1>
+        </div>
+      </div>
+    </div>
+ 
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/peterle22.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> Born and raised in Seattle, Washington. My family immigrated here from Vietnam after the war, 
+              seeking opportunites for a better life.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>Software Engineer</span><br>Creating Music Playlists</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Web Impact UW</span><br>Student web development organization</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>University of Washington</span><br>Bachelors of Science in Informatics</li>
+                <li><span>Personal Projects</span><br>Web App Development</li>
+                <li><span>CSE 121/122</span><br>Intro series in Java</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------services------- -->
+    <div id="education">
+      <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+          <div>
+            <i class="fa-solid fa-building-columns fa-fade fa-xl" style="color: #5900ff;"></i>
+            <h2>University of Washington</h2>
+            <p>Current sophomore pursuing Bacherlors of science in Informatics</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- ---------contact------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i>petervole064@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i>(206)321-4938</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/petervolee/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/peter-le22/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/Peter+Vo+Le+-+Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Peter. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+  </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for(tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

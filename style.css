@@ -220,6 +220,12 @@ nav ul li a:hover::after {
 .contact-left {
   flex-basis: 35%;
 }
+
+.contact-left .btn.btn2 {
+  display: inline-block;
+  background-color: #080808;
+ color: white;
+}
 .contact-right {
   flex-basis: 60%;
 }

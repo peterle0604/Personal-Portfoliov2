@@ -12,19 +12,23 @@
   </head>
  
   <body>
+    <nav>
+      <div class="container">
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#header"> Home</a></li>
+          <li><a href="#about"> About</a></li>
+          <li><a href="#education"> Education</a></li>
+          <li><a href="#current-project"> Current Project</a></li>
+          <li><a href="#projects"> Projects</a></li>
+          <li><a href="#contact"> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <div id="header">
       <div class="container">
-        <nav>
-          <img src="images/logo.png" class="logo">
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> Education</a></li>
-            <li><a href="#"> Contact</a></li>
-          </ul>
-        </nav>
         <div class="header-text">
-          <p>Software Engineer</p>
+          <p class="typing-text">Software Engineer</p>
           <h1>Hi, I'm <span>Peter</span> Le <br>from Seattle</h1>
         </div>
       </div>
@@ -37,7 +41,7 @@
           <div class="about-col-1">
             <!-- <img src="images/peterle22.png"> -->
           </div>
-          <div class="about-col-2">
+          <div class="about-col-2 fade-in">
             <h1 class="sub-title">About Me</h1>
             <p> 
                I’m Peter Vo Le, a senior Informatics student at the University of Washington and an aspiring software engineer seeking new-grad opportunities. I’m passionate about building reliable, user-centered software and turning complex problems into clear, maintainable solutions.
@@ -49,7 +53,7 @@
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
               <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('education-tab')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -71,7 +75,7 @@
               </ul>
             </div>
 
-            <div class="tab-contents" id="education">
+            <div class="tab-contents" id="education-tab">
               <ul>
                 <li><span>University of Washington</span><br>Bachelors of Science in Informatics</li>
                 <li><span>Personal Projects</span><br>Web App Development</li>
@@ -84,9 +88,9 @@
     <!-- ------education------- -->
     <div id="education">
       <div class="container">
-        <h1 class="sub-title">Education</h1>
+        <h1 class="sub-title fade-in">Education</h1>
         <div class="education-list">
-          <div>
+          <div class="education-card slide-in">
             <i class="fa-solid fa-building-columns fa-fade fa-xl" style="color: #5900ff;"></i>
             <h2>University of Washington</h2>
             <p>Current senior pursuing Bachelors of Science in Informatics</p>
@@ -95,23 +99,98 @@
         </div>
       </div>
     </div>
-    <!-- ---------portfolio------------ -->
-    
-    <!-- <div id="portfolio">
+
+    <!-- ---------current project------------ -->
+    <div id="current-project">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
+        <h1 class="sub-title fade-in">Current Project</h1>
+        <div class="current-project-container">
+          <div class="current-project-card slide-in">
+            <div class="project-header">
+              <i class="fa-solid fa-code fa-xl" style="color: #343b9c;"></i>
+              <h2>Project Title</h2>
+              <span class="project-status">In Progress</span>
+            </div>
+            <p class="project-description">
+              Add your current project description here. This section highlights what you're currently working on.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Technology 1</span>
+              <span class="tech-tag">Technology 2</span>
+              <span class="tech-tag">Technology 3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <!-- ---------projects------------ -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title fade-in">Projects</h1>
+        <div class="projects-grid">
+          <!-- Project Card Template - Copy this structure to add more projects -->
+          <div class="project-card slide-in">
+            <div class="project-icon">
+              <i class="fa-solid fa-laptop-code fa-2x" style="color: #343b9c;"></i>
+            </div>
+            <h3>Project Name</h3>
+            <p>Project description goes here. Add details about what the project does, technologies used, and key features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Tech 1</span>
+              <span class="tech-tag">Tech 2</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+
+          <!-- Add more project cards by copying the structure above -->
+          <div class="project-card slide-in">
+            <div class="project-icon">
+              <i class="fa-solid fa-mobile-screen-button fa-2x" style="color: #343b9c;"></i>
+            </div>
+            <h3>Project Name</h3>
+            <p>Project description goes here. Add details about what the project does, technologies used, and key features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Tech 1</span>
+              <span class="tech-tag">Tech 2</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card slide-in">
+            <div class="project-icon">
+              <i class="fa-solid fa-globe fa-2x" style="color: #343b9c;"></i>
+            </div>
+            <h3>Project Name</h3>
+            <p>Project description goes here. Add details about what the project does, technologies used, and key features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Tech 1</span>
+              <span class="tech-tag">Tech 2</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- ---------contact------------ -->
   <div id="contact">
     <div class="container">
       <div class="row">
-        <div class="contact-left">
+        <div class="contact-left fade-in">
           <h1 class="sub-title">Contact Me</h1>
           <p> <i class="fa-solid fa-paper-plane"></i>petervole064@gmail.com</p>
           <p> <i class="fa-solid fa-phone"></i>(206)321-4938</p>
@@ -121,12 +200,13 @@
           </div>
           <a href="images/Peter_Resume.pdf" download class="btn btn2">Download Resume</a>
         </div>
-        <div class="contact-right">
-          <form>
+        <div class="contact-right fade-in">
+          <form id="contactForm">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
+            <div class="form-message"></div>
           </form>
         </div>
       </div>
@@ -147,7 +227,142 @@
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+        const targetTab = document.getElementById(tabname);
+        if (targetTab) {
+          targetTab.classList.add("active-tab");
+        }
+      }
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const target = document.querySelector(targetId);
+          if (target) {
+            const navHeight = document.querySelector('nav').offsetHeight;
+            const offsetTop = target.offsetTop - navHeight;
+            window.scrollTo({
+              top: Math.max(0, offsetTop),
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Typing animation for header text
+      const typingText = document.querySelector('.typing-text');
+      if (typingText) {
+        const text = typingText.textContent;
+        typingText.textContent = '';
+        let i = 0;
+        function typeWriter() {
+          if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+        setTimeout(typeWriter, 500);
+      }
+
+      // Active navigation highlighting on scroll
+      const sections = document.querySelectorAll('section, #header, #about, #education, #current-project, #projects, #contact');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+      function highlightNav() {
+        let current = '';
+        const scrollY = window.pageYOffset;
+        const navHeight = document.querySelector('nav').offsetHeight;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - navHeight - 100;
+          const sectionHeight = section.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', highlightNav);
+      highlightNav();
+
+      // Navbar background change on scroll
+      const nav = document.querySelector('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          nav.style.background = 'rgba(8, 8, 8, 0.98)';
+          nav.style.boxShadow = '0 2px 20px rgba(52, 59, 156, 0.3)';
+        } else {
+          nav.style.background = 'rgba(8, 8, 8, 0.95)';
+          nav.style.boxShadow = 'none';
+        }
+      });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in, .slide-in').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Form validation and feedback
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formMessage = this.querySelector('.form-message');
+          const inputs = this.querySelectorAll('input, textarea');
+          let isValid = true;
+
+          inputs.forEach(input => {
+            if (!input.value.trim()) {
+              isValid = false;
+              input.style.border = '2px solid #ff4444';
+            } else {
+              input.style.border = '2px solid #343b9c';
+            }
+          });
+
+          if (isValid) {
+            formMessage.textContent = 'Message sent successfully! ✓';
+            formMessage.style.color = '#4CAF50';
+            formMessage.style.display = 'block';
+            this.reset();
+            setTimeout(() => {
+              formMessage.style.display = 'none';
+            }, 3000);
+          } else {
+            formMessage.textContent = 'Please fill in all fields.';
+            formMessage.style.color = '#ff4444';
+            formMessage.style.display = 'block';
+          }
+        });
+
+        // Remove error styling on input
+        contactForm.querySelectorAll('input, textarea').forEach(input => {
+          input.addEventListener('focus', function() {
+            this.style.border = '2px solid #343b9c';
+          });
+        });
       }
     </script>
   </body>
